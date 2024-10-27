@@ -1,0 +1,68 @@
+/* static/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); /* Set the background image */
+    background-size: 1550px 800px; /* Cover the entire page */
+    background-position: top center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50; /* Change text color for better visibility */
+}
+
+form {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    background-color: black;
+    color: #ccc; /* Change label color to green */
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+h2 {
+    color: #4CAF50; /* Change the color for output headings */
+}
+
+pre {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for better readability */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    max-height: 300px;
+    overflow-y: auto;
+}

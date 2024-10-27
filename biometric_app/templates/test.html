@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Test Biometric System</h1>
+    
+    <form action="/run_test" method="POST">
+        <label for="folder_num">Enter Folder Number:</label>
+        <input type="text" id="folder_num" name="folder_num" required>
+        <button type="submit">Run Test</button>
+    </form>
+
+    {% if testing_output %}
+    <h2>Testing Output:</h2>
+    <pre>{{ testing_output }}</pre>
+    {% endif %}
+</body>
+</html>

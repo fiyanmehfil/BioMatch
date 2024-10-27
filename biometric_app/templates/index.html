@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biometric System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Fingerprint and Hand Geometry Biometric System</h1>
+    
+    <form action="/train" method="POST">
+        <button type="submit">Start Training</button>
+    </form>
+    
+    <form action="/test">
+        <button type="submit">Go to Testing</button>
+    </form>
+
+    {% if training_output %}
+    <h2>Training Output:</h2>
+    <pre>{{ training_output }}</pre>
+    {% endif %}
+</body>
+</html>
